@@ -1,0 +1,115 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 2rem 1.2rem 2rem;
+}
+
+header {
+  width: 100%;
+  padding: 1.5rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  background: #fe9d0b;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 1.5rem 2rem;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input .textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+}
+#comentarios{
+  width: 150px;
+  height: 120px;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  background: #fe9d0b;
+  color: white;
+
+  padding: 0.5rem 1rem;
+  margin-top: 16.5px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: opacity(0.8);
+  transition: filter 0.2s;
+}
+
+button.edit {
+  color: black;
+  background: transparent;
+}
+
+button.edit:hover {
+  color: white;
+  background: black;
+}
+
+button.exclude {
+  color: black;
+  background: transparent;
+}
+
+button.exclude:hover {
+  color: white;
+  background: black;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+
+  display: block;
+}
+
+th {
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+td {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border: 0;
+  text-align: right;
+}

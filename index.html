@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Cadastro de produtos</h1>
+    </header>
+    <main>
+      <section class="container">
+        <form id="form">
+          <div class="content">
+            Código do produto:<input
+              id="codigo"
+              type="number"
+              data-index="new"
+              placeholder="Ex: 555"
+              required
+            />
+            Nome:<input
+              id="nome"
+              type="text"
+              placeholder="Ex: Caixas"
+              required
+            />
+            Altura:<input
+              id="altura"
+              type="number"
+              placeholder="Ex: 0.9"
+              required
+            />
+          </div>
+          <div class="content">
+            Largura:<input
+              id="largura"
+              type="number"
+              placeholder="Ex: 1.2"
+              required
+            />
+            Profundidade:<input
+              id="profundidade"
+              type="number"
+              placeholder="Ex: 0.6"
+              required
+            />
+            <button id="submit" type="submit">Enviar</button>
+          </div>
+          <div class="content">
+            Comentários:<textarea
+              id="comentarios"
+              type="text"
+              placeholder="Informações complementares"
+              required
+            ></textarea>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Cód. do produto</th>
+            <th>Nome</th>
+            <th>Altura</th>
+            <th>Largura</th>
+            <th>Profundidade</th>
+            <th>Comentários</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>
